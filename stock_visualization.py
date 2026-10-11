@@ -15,6 +15,7 @@ sample CSV when internet access is unavailable.
 from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
+import streamlit as st
 
 PROJECT_DIR = Path(__file__).resolve().parent
 DATA_DIR = PROJECT_DIR / "data"
@@ -73,7 +74,7 @@ def main():
     plt.tight_layout()
     chart_path = CHARTS_DIR / "stock_price_moving_averages.png"
     plt.savefig(chart_path, dpi=150)
-    plt.show()
+    st.pyplot(plt.gcf())
 
     print("\n--- Quick Summary ---")
     print(f"Rows analyzed: {len(df)}")
