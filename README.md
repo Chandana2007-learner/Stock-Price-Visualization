@@ -44,3 +44,4 @@ For Indian stocks, change the y-axis label to `Closing Price (INR)` if you want 
 - `data/sample_stock_prices.csv` — sample data for offline testing
 - `data/stock_prices_with_moving_averages.csv` — generated after running
 - `charts/stock_price_moving_averages.png` — generated after running
+- Stock Price Graph
